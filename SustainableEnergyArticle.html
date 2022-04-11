@@ -1,0 +1,304 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <style>
+            * 
+            {
+                box-sizing: border-box
+            }
+            body 
+            {
+                font-family: Verdana, sans-serif; margin:0
+            }
+            #bibliography
+            {
+                margin-right: 50px;
+            }
+            #yellowbackground
+            {
+                background-color: #bf8b2e;
+            }
+            #websiteTitle
+            {
+                text-decoration: none;
+                color: #bf8b2e;
+                font-size: 40px;
+            }
+            #titleSection
+            {
+                margin-left: 33%;
+            }
+            #articleTitle
+            {
+                color: #bf8b2e;
+                font-size: 40px;
+                margin-left: 15%;
+            }
+            #panelTable
+            {
+                margin: auto;
+            }
+            #ArticleSectionTitle
+            {
+                text-align: center;
+                color: #bf8b2e;
+            }
+            .tablecell
+            {
+                border-collapse: collapse;
+                border: black, 1px, solid;
+            }
+            .dropdown {
+              position: relative;
+              display: inline-block;
+              margin-left: 15px;
+            }
+            .regularTextLink
+            {
+                text-decoration: none;
+            }
+            .regularTextLink:visited
+            {
+                color: white;
+            }
+            .regularTextLink:hover
+            {
+                color: #bfb198;
+            }
+            .mySlides 
+            {
+                display: none
+            }
+            .slideImage 
+            {
+                vertical-align: middle;
+                max-width: 1000px;
+            }
+            .slideshow-container 
+            {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .prev, .next 
+            {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            .next 
+            {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover 
+            {
+                background-color: rgba(69, 69, 69, 0.8);
+            }
+            .text 
+            {
+                color: #000000;
+                font-size: 15px;
+                padding: 8px 12px;
+                bottom: 8px;
+                width: 100%;
+                border: 1px black solid;
+                text-align: left;
+            }
+            .numbertext 
+            {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .fade 
+            {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            .articleTitle
+            {
+                color: black;
+                text-decoration: none;
+            }
+            .panelSection
+            {
+                width: 300px;
+                height: 500px;
+                background-color: #bf8b2e;
+                border: 1px black solid;
+            }
+            .image
+            {
+                object-fit: cover;
+                width: 300px;
+                height: 500px;
+            }
+            .panelTitle
+            {
+                margin-top: 0%;
+                margin-bottom: 0%;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(191, 139, 46, 0.8);
+                width: 100%;
+                height: 20%;
+                font-size: 30px;
+                color: white;
+                text-decoration: none;
+                position: absolute;
+            }
+            .panel
+            {
+                position: relative;
+                width: 300px;
+                height: 500px;
+            }
+            @keyframes fade 
+            {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="titleSection">
+            <table>
+                <tr>
+                    <td rowspan="2" class="tablecell">
+                        <div>
+                            <img src="UN_SDG_12.gif" width="125px">
+                        </div> 
+                    </td>
+                    <td class="tablecell" colspan="2">
+                        <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/homePage.html" id="websiteTitle">The Global Clean-Up</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tablecell" id="yellowbackground">
+                        <div class="dropdown" id="bibliography">
+                            <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/Bibliography.html" class="regularTextLink" style="padding-left: 125px;">List of Sources</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h1 id="articleTitle">Sustainable Energy</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="RenewableEnergy.jpeg" class="slideImage">
+                <div class="text">Renewable energy is a fairly new, yet crucial concept of energy sources. These energy sources, including, wind turbines, solar panels, and hydro-powered energy sources, aren't harmful to the environment, are much more effecient in energy, and (as the name suggests) are renewable. They are better than fossil fuels as the emissions are harmful to the environent and fossil fuels aren't renewable as there are a limited amount of these fossil fuels. It is an important step in society that we move to renewable energy, and it can actually save money with electric car owners saving thousands of dollars per year on gas that they would have bought. With the many benefits of renewable energy, it's obvios to switch to renewable energy.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="FossilFuels.jpeg" class="slideImage">
+                <div class="text">Fossil fuels are a very problematic source of energy while being hard to give up. For one, they are destroying teh environment, from extracting them, to making them usable, to using them. The entire process is horrible for the environment and these resources aren't renewable, meaning eventually, we will run out of them. However, these fossil fuels are relatively cheap and have been used for decades, making it hard to stop using. Even so, it is very important to switch from fossil fuels to renewable energy.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <canvas id="myChart" style="width: 100%;" class="slideImage"></canvas>
+                <div class="text">A shown by the graph, emmisions of carbon dioxide have skyrocketed in the past for years. While we are doing a fairly good job at reducing carbon emmisions, we still at pumping 30 billion tons of carbon dioxide into the atmosphere which is using a lot of our limited amounts of fossil fuel and is harming our environment. It is crucially important for our planet, to responsibly use our energy and start switching to renewable resources.</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <h1 id="ArticleSectionTitle">Articles on Sustainable Energy</h1>
+        <div id="panelArea">
+            <table id="panelTable">
+                <tr>
+                    <td class="panelSection">
+                        <div id="panelOne" class="panel">
+                            <img src="RenewableEnergyTypes.jpg" class="image">
+                            <a href="https://energyx.com/resources/the-5-main-types-of-sustainable-energy/" class="panelTitle">Types of Renewable Energy</a>
+                        </div>
+                    </td>
+                    <td class="panelSection">
+                        <div id="panelTwo" class="panel">
+                            <img src="FossilFuels.jpg" class="image">
+                            <a href="https://www.nrdc.org/stories/fossil-fuels-dirty-facts" class="panelTitle">Problems With Fossil Fuels</a>
+                        </div>
+                    </td>
+                    <td class="panelSection">
+                        <div id="panelThree" class="panel">
+                            <img src="RenewableEnergyBenefits.jpeg" class="image">
+                            <a href="https://www.epa.gov/statelocalenergy/local-renewable-energy-benefits-and-resources" class="panelTitle">Benefits of Renewable Energy</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript">
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) 
+            {
+                showSlides(slideIndex += n);
+            }
+            function showSlides(n) 
+            {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) 
+                {
+                    slideIndex = 1
+                }    
+                if (n < 1) 
+                {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) 
+                {
+                    slides[i].style.display = "none";  
+                }
+                slides[slideIndex-1].style.display = "block";  
+            }
+            var xValues = ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
+            var yValues = ["33.35", "34.48", "34.98", "35.29", "35.54", "35.5", "35.46", "35.93", " 36.65", "36.71", "34.81"]
+            var barColors = "black";
+            new Chart("myChart", 
+            {
+                type: "bar",
+                data:
+                {
+                    labels: xValues,
+                    datasets: 
+                    [{
+                    backgroundColor: barColors,
+                    data: yValues
+                    }]
+                },
+                options: 
+                {
+                    legend: {display: false},
+                    scales:
+                    {
+                        yAxes:
+                        [{
+                            scaleLabel: {display: true,labelString: 'Billions of tons'}
+                        }],
+                        xAxes:
+                        [{
+                            scaleLabel: {display: true, labelString: "Year"}
+                        }]
+                    },
+                    title: {display: true,text: "Carbon Dioxide Emissions Annually from 2010 to 2020"}
+                }
+            }); 
+        </script>
+    </body>
+</html>

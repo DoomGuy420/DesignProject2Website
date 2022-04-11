@@ -1,0 +1,318 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <style>
+            * 
+            {
+                box-sizing: border-box
+            }
+            body 
+            {
+                font-family: Verdana, sans-serif; margin:0
+            }
+            #bibliography
+            {
+                margin-right: 50px;
+            }
+            #yellowbackground
+            {
+                background-color: #bf8b2e;
+            }
+            #websiteTitle
+            {
+                text-decoration: none;
+                color: #bf8b2e;
+                font-size: 40px;
+            }
+            #titleSection
+            {
+                margin-left: 33%;
+            }
+            #articleTitle
+            {
+                color: #bf8b2e;
+                font-size: 40px;
+                margin-left: 15%;
+            }
+            #panelTable
+            {
+                margin: auto;
+            }
+            #ArticleSectionTitle
+            {
+                text-align: center;
+                color: #bf8b2e;
+            }
+            #panelTwoTitle
+            {
+                margin-top: 0%;
+                margin-bottom: 0%;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(191, 139, 46, 0.8);
+                width: 100%;
+                height: 20%;
+                font-size: 25px;
+                color: white;
+                text-decoration: none;
+                position: absolute;
+            }
+            .tablecell
+            {
+                border-collapse: collapse;
+                border: black, 1px, solid;
+            }
+            .dropdown {
+              position: relative;
+              display: inline-block;
+              margin-left: 15px;
+            }
+            .regularTextLink
+            {
+                text-decoration: none;
+            }
+            .regularTextLink:visited
+            {
+                color: white;
+            }
+            .regularTextLink:hover
+            {
+                color: #bfb198;
+            }
+            .mySlides 
+            {
+                display: none
+            }
+            .slideImage 
+            {
+                vertical-align: middle;
+                max-width: 1000px;
+            }
+            .slideshow-container 
+            {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .prev, .next 
+            {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            .next 
+            {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover 
+            {
+                background-color: rgba(69, 69, 69, 0.8);
+            }
+            .text 
+            {
+                color: #000000;
+                font-size: 15px;
+                padding: 8px 12px;
+                bottom: 8px;
+                width: 100%;
+                border: 1px black solid;
+                text-align: left;
+            }
+            .numbertext 
+            {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .fade 
+            {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            .articleTitle
+            {
+                color: black;
+                text-decoration: none;
+            }
+            .panelSection
+            {
+                width: 300px;
+                height: 500px;
+                background-color: #bf8b2e;
+                border: 1px black solid;
+            }
+            .image
+            {
+                object-fit: cover;
+                width: 300px;
+                height: 500px;
+            }
+            .panelTitle
+            {
+                margin-top: 0%;
+                margin-bottom: 0%;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(191, 139, 46, 0.8);
+                width: 100%;
+                height: 20%;
+                font-size: 30px;
+                color: white;
+                text-decoration: none;
+                position: absolute;
+            }
+            .panel
+            {
+                position: relative;
+                width: 300px;
+                height: 500px;
+            }
+            @keyframes fade 
+            {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="titleSection">
+            <table>
+                <tr>
+                    <td rowspan="2" class="tablecell">
+                        <div>
+                            <img src="UN_SDG_12.gif" width="125px">
+                        </div> 
+                    </td>
+                    <td class="tablecell" colspan="2">
+                        <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/homePage.html" id="websiteTitle">The Global Clean-Up</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tablecell" id="yellowbackground">
+                        <div class="dropdown" id="bibliography">
+                            <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/Bibliography.html" class="regularTextLink"  style="padding-left: 125px;">List of Sources</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h1 id="articleTitle">Pollution</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="OceanPlastic.jpeg" class="slideImage">
+                <div class="text">Water pollution is a really big and severe problem, especially involving the plastics. It can take from 100 to 1000 for the plastic to properly decompose, and even with this, it is still a huge problem. On top of the fact that the plastics stay in the water for no less than 100 years to decompose, marine animals can mistake these plastics for food. After ingestion of these plastics, they will by affected by them, either by poisoning or choking on them. This kills the marine life in the oceans and lakes. This is also a problem for humans, who will eat some of these animals who have ingested plastic. This can make problems for humans along with the aquatic environment. It is very important to make sure we reduce our plastic waste and recycle when possible. This way, we can save our aqautic environment and make life for all cleaner.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="Landfill.jpeg" class="slideImage">
+                <div class="text">Leaving plastics in landfills or burying them in the ground is no better than throwing them in lakes or oceans. These can get be blown out of the open landfills into our environments and furthermore pollute it with the plastics, threatening our wildlife and ecosystems. On top of this, if buried into the ground, the plastic releases toxins into the soil that could affect organisms in it. It is very harmful to the animals and insects that livearound these landfills. These can be stopped by changing our habits, buying better and recycling all the plastics that we can.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <canvas id="myChart" style="width: 100%;" class="slideImage"></canvas>
+                <div class="text">A shown by the graph, the production of plastics had drastically increased from 2000 to 2015 and has kept rising. With more plastic being produced, we are destroying our planet, using up more resources, burning fossil fuels to make the things we need, and leaving all these plastics in the oceans and our environments allowing them to destroy the ecosystem around them. It is absolutely necessary for all of us to take initiative and reduce our usage of plastic and in turn reduce the amount of plastic manufactured.</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <h1 id="ArticleSectionTitle">Articles on Pollution</h1>
+        <div id="panelArea">
+            <table id="panelTable">
+                <tr>
+                    <td class="panelSection">
+                        <div id="panelOne" class="panel">
+                            <img src="ArcticPlastic.png" class="image">
+                            <a href="https://www.nature.com/articles/s43017-022-00279-8" class="panelTitle">Plastic Has Reached The Arctic</a>
+                        </div>
+                    </td>
+                    <td class="panelSection">
+                        <div id="panelTwo" class="panel">
+                            <img src="LandfillTrash.jpeg" class="image">
+                            <a href="https://www.theguardian.com/environment/2022/mar/17/toxic-waste-revealed-as-eroding-coastlines-expose-old-landfills" id="panelTwoTitle">Toxic Waste Revealed In Old Landfills As Coastlines Erode</a>
+                        </div>
+                    </td>
+                    <td class="panelSection">
+                        <div id="panelThree" class="panel">
+                            <img src="microplastics.jpeg" class="image">
+                            <a href="https://www.theguardian.com/environment/2022/mar/24/microplastics-found-in-human-blood-for-first-time" class="panelTitle">Plastic Pollution in Our Blood</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript">
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) 
+            {
+                showSlides(slideIndex += n);
+            }
+            function showSlides(n) 
+            {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) 
+                {
+                    slideIndex = 1
+                }    
+                if (n < 1) 
+                {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) 
+                {
+                    slides[i].style.display = "none";  
+                }
+                slides[slideIndex-1].style.display = "block";  
+            }
+            var xValues = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"]
+            var yValues = ["213", "218", "231", "241", "256", "263", "280", "295", " 281", "288", " 313", "325", "338", "352", "367", "381"]
+            var barColors = "black";
+            new Chart("myChart", 
+            {
+                type: "bar",
+                data:
+                {
+                    labels: xValues,
+                    datasets: 
+                    [{
+                    backgroundColor: barColors,
+                    data: yValues
+                    }]
+                },
+                options: 
+                {
+                    legend: {display: false},
+                    scales:
+                    {
+                        yAxes:
+                        [{
+                            scaleLabel: {display: true,labelString: 'Millions of tons'}
+                        }],
+                        xAxes:
+                        [{
+                            scaleLabel: {display: true, labelString: "Year"}
+                        }]
+                    },
+                    title: {display: true,text: "Plastic Production Annually from 2000 to 2015"}
+                }
+            }); 
+        </script>
+    </body>
+</html>

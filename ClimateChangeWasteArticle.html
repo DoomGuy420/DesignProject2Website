@@ -1,0 +1,326 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <style>
+            * 
+            {
+                box-sizing: border-box
+            }
+            body 
+            {
+                font-family: Verdana, sans-serif; margin:0
+            }
+            #bibliography
+            {
+                margin-right: 50px;
+            }
+            #yellowbackground
+            {
+                background-color: #bf8b2e;
+            }
+            #websiteTitle
+            {
+                text-decoration: none;
+                color: #bf8b2e;
+                font-size: 40px;
+            }
+            #titleSection
+            {
+                margin-left: 33%;
+            }
+            #articleTitle
+            {
+                color: #bf8b2e;
+                font-size: 40px;
+                margin-left: 15%;
+            }
+            #panelTable
+            {
+                margin: auto;
+            }
+            #ArticleSectionTitle
+            {
+                text-align: center;
+                color: #bf8b2e;
+            }
+            .tablecell
+            {
+                border-collapse: collapse;
+                border: black, 1px, solid;
+            }
+            .dropdown {
+              position: relative;
+              display: inline-block;
+              margin-left: 15px;
+            }
+            .regularTextLink
+            {
+                text-decoration: none;
+            }
+            .regularTextLink:visited
+            {
+                color: white;
+            }
+            .regularTextLink:hover
+            {
+                color: #bfb198;
+            }
+            .mySlides 
+            {
+                display: none
+            }
+            .slideImage 
+            {
+                vertical-align: middle;
+                max-width: 1000px;
+            }
+            .slideshow-container 
+            {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .prev, .next 
+            {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            .next 
+            {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover 
+            {
+                background-color: rgba(69, 69, 69, 0.8);
+            }
+            .text 
+            {
+                color: #000000;
+                font-size: 15px;
+                padding: 8px 12px;
+                bottom: 8px;
+                width: 100%;
+                border: 1px black solid;
+                text-align: left;
+            }
+            .numbertext 
+            {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .fade 
+            {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            .articleTitle
+            {
+                color: black;
+                text-decoration: none;
+            }
+            .panelSection
+            {
+                width: 300px;
+                height: 500px;
+                background-color: #bf8b2e;
+                border: 1px black solid;
+            }
+            .image
+            {
+                object-fit: cover;
+                width: 300px;
+                height: 500px;
+            }
+            .panelTitle
+            {
+                margin-top: 0%;
+                margin-bottom: 0%;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(191, 139, 46, 0.8);
+                width: 100%;
+                height: 20%;
+                font-size: 28px;
+                color: white;
+                text-decoration: none;
+                position: absolute;
+            }
+            .panel
+            {
+                position: relative;
+                width: 300px;
+                height: 500px;
+            }
+            @keyframes fade 
+            {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="titleSection">
+            <table>
+                <tr>
+                    <td rowspan="2" class="tablecell">
+                        <div>
+                            <img src="UN_SDG_12.gif" width="125px">
+                        </div> 
+                    </td>
+                    <td class="tablecell" colspan="2">
+                        <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/homePage.html" id="websiteTitle">The Global Clean-Up</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tablecell" id="yellowbackground">
+                        <div class="dropdown" id="bibliography">
+                            <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/Bibliography.html" class="regularTextLink">List of Sources</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h1 id="articleTitle">Climate Change and Waste</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="CarbonDioxide.jpeg" class="slideImage">
+                <div class="text">Burning fossil fuels happens everyday and in turn, carbon dioxide or CO2 is emitted into the atmosphere every second. This is really bad for the Earth as the Carbon Dioxide acts as a screen, allowing in sunlight, but trapping some of it when the sunlight tries to reflect back off of the Earth. This in turn creates a greenhouse effect and warms up the Earth and causes much more problems for the Earth. It is extremely important to change our habits to prevent this.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="ClimateChangeEffects.jpeg" class="slideImage">
+                <div class="text">The effects of climate change are very dire. Rising temperatures, hurricanes and weather intensifying, rising sea levels and the melting of the Arctic are all part of the effects of climate change. There are huge consequences if we do not work towards stopping this problem. Thankfully, people are working towardsstopping it. It is a group effort the whole world must take part in. It is really important that we all do what we can to stop climate change.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <canvas id="myChart" style="width: 100%;" class="slideImage"></canvas>
+                <div class="text">As seen in the graph, the changes in the temperature has been hovering at roughly 1 celcius above regular temperatures. While at first glance this seems like a tiny problem, it has huge consequences. 0.5 degrees celcius makes a huge difference, in wildlife, plantlife, access to water and ecosystems. Insects would lose roughly half their population along with plants and vertebrates. Along this, if the world were to jump from 1.5 celcius, it would go from 350 million people with water shortages and being exposed to drought, to 410 million. As seen, these effects are hugely impactful, and it is imperative, that we stop climate change before it ruins the planet.</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <h2 style="text-align: center; color: #bf8b2e;">Time Page was Loaded:</h2>
+        <p id="dateLoaded" style="text-align: center; color: #bf8b2e;"></p>
+        <br>
+        <div style="text-align: center;">
+            <h2 style="display: inline-block; color: #bf8b2e;">Number of Tons of </h2> <h2 style="color: black; display: inline-block;">Carbon</h2> <h2 style="display: inline-block; color: #bf8b2e;">Dioxide Emitted Since This Page Was Loaded:</h2>
+        </div>
+        <br>
+        <h2 class="blacktext" id="emissions" style="text-align: center;"></h2>
+        <h1 id="ArticleSectionTitle">Articles on Climate Change and Pollution</h1>
+        <div id="panelArea">
+            <table id="panelTable">
+                <tr>
+                    <td class="panelSection">
+                        <div id="panelOne" class="panel">
+                            <img src="ClimateChangeInquiry.jpeg" class="image">
+                            <a href="https://www.un.org/en/climatechange/what-is-climate-change" class="panelTitle">What is Climate Change Really?</a>
+                        </div>
+                    </td>
+                    <td class="panelSection">
+                        <div id="panelTwo" class="panel">
+                            <img src="ClimateChangeWaste.jpeg" class="image">
+                            <a href="https://www.wwf.org.au/news/blogs/plastic-waste-and-climate-change-whats-the-connection" class="panelTitle">Connection Between Waste And Climate Change</a>
+                        </div>
+                    </td>
+                    <td class="panelSection">
+                        <div id="panelThree" class="panel">
+                            <img src="EverydayLife.jpeg" class="image">
+                            <a href="https://www.greengeeks.com/blog/6-things-you-might-be-doing-daily-that-contribute-to-climate-change/" class="panelTitle">Ways Your Everday Life Contributes To Climate Change</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript">
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) 
+            {
+                showSlides(slideIndex += n);
+            }
+            function showSlides(n) 
+            {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) 
+                {
+                    slideIndex = 1
+                }    
+                if (n < 1) 
+                {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) 
+                {
+                    slides[i].style.display = "none";  
+                }
+                slides[slideIndex-1].style.display = "block";  
+            }
+            var xValues = ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"]
+            var yValues = ["0.72", "0.61", "0.65", "0.68", "0.75", "0.9", "1.02", "0.92", " 0.85", "0.98", "1.02", "0.85"]
+            var barColors = "black";
+            new Chart("myChart", 
+            {
+                type: "bar",
+                data:
+                {
+                    labels: xValues,
+                    datasets: 
+                    [{
+                    backgroundColor: barColors,
+                    data: yValues
+                    }]
+                },
+                options: 
+                {
+                    legend: {display: false},
+                    scales:
+                    {
+                        yAxes:
+                        [{
+                            scaleLabel: {display: true,labelString: 'Temperature Anomaly (Celcius)'}
+                        }],
+                        xAxes:
+                        [{
+                            scaleLabel: {display: true, labelString: "Year"}
+                        }]
+                    },
+                    title: {display: true,text: "Temperature Anomaly from 2010 to 2021"}
+                }
+            }); 
+            var loadTime = new Date();
+            var millisec = loadTime.getTime();
+            document.getElementById("dateLoaded").innerHTML = loadTime.toLocaleString();
+            function myFunction() 
+            {
+                var d = new Date();
+                var n = d.getTime();
+                var difference = (n - millisec)/1000;
+                var emissions = difference * 1240;
+                document.getElementById("emissions").innerHTML = emissions.toFixed(2);
+
+            }
+
+            setInterval(myFunction, 50);
+        </script>
+    </body>
+</html>

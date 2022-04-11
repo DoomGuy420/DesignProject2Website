@@ -1,0 +1,368 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <style>
+            * 
+            {
+                box-sizing: border-box
+            }
+            body 
+            {
+                font-family: Verdana, sans-serif;
+            }
+            table
+            {
+                border-collapse: collapse;
+            }
+            h1
+            {
+                text-align: left;
+                color: #bf8b2e;
+            }
+            #headerSection
+            {
+                padding: 3%;
+            }
+            #panelOneHovered
+            {
+                display: none;
+            }
+            #panelOne:hover + #panelOneHovered
+            {
+                display: inline-block;
+            }
+            #panelOne:hover
+            {
+                display: none;
+            }
+            #panelTwoHovered
+            {
+                display: none;
+            }
+            #panelTwo:hover + #panelTwoHovered
+            {
+                display: inline-block;
+            }
+            #panelTwo:hover
+            {
+                display: none;
+                
+            }
+            #panelThreeHovered
+            {
+                display: none;                
+            }
+            #panelThree:hover + #panelThreeHovered
+            {
+                display: inline-block;
+            }
+            #panelThree:hover
+            {
+                display: none;
+                
+            }
+            #panelTable
+            {
+                margin: auto;
+            }
+            #yellowbackground
+            {
+                background-color: #bf8b2e;
+            }
+            #titleSection
+            {
+                margin-left: 33%;
+            }
+            #bibliography
+            {
+                margin-right: 50px;
+            }
+            #websiteTitle
+            {
+                text-decoration: none;
+                color: #bf8b2e;
+                font-size: 40px;
+            }
+            .panelSection
+            {
+                width: 300px;
+                height: 500px;
+                background-color: #bf8b2e;
+                border: 1px black solid;
+            }
+            .panel
+            {
+                position: relative;
+                width: 300px;
+                height: 500px;
+            }
+            .image
+            {
+                object-fit: cover;
+                width: 300px;
+                height: 500px;
+            }
+            .panelInfo
+            {
+                margin-top: 0%;
+                font-size: 30px;
+            }
+            .panelTitle
+            {
+                margin-top: 0%;
+                margin-bottom: 0%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(191, 139, 46, 0.8);
+                width: 100%;
+                height: 20%;
+                font-size: 30px;
+                color: white;
+            }
+            .factPoints
+            {
+                font-size: 20px;
+            }
+            .tablecell
+            {
+                border-collapse: collapse;
+                border: black, 1px, solid;
+            }
+            .mySlides 
+            {
+                display: none
+            }
+            .slideImage 
+            {
+                vertical-align: middle;
+                max-width: 1000px;
+            }
+            .slideshow-container 
+            {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .prev, .next 
+            {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            .next 
+            {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover 
+            {
+                background-color: rgba(69, 69, 69, 0.8);
+            }
+            .text 
+            {
+                color: #000000;
+                font-size: 25px;
+                padding: 8px 12px;
+                bottom: 8px;
+                width: 100%;
+                border: 1px black solid;
+                text-align: center;
+            }
+            .numbertext 
+            {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .fade 
+            {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            .articleLink
+            {
+                color: black;
+                text-decoration: none;
+            }
+            .dropdown {
+              position: relative;
+              display: inline-block;
+              margin-left: 15px;
+            }
+            .regularTextLink
+            {
+                text-decoration: none;
+            }
+            .regularTextLink:visited
+            {
+                color: white;
+            }
+            .regularTextLink:hover
+            {
+                color: #bfb198;
+            }
+            .centered
+            {
+                margin-left: 23%;
+            }
+            .mainArticleLink
+            {
+                font-size: 20px;
+                position: absolute;
+                bottom: 5;
+                left: 5;
+            }
+            @keyframes fade 
+            {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="titleSection">
+            <table>
+                <tr>
+                    <td rowspan="2" class="tablecell">
+                        <div>
+                            <img src="UN_SDG_12.gif" width="125px">
+                        </div> 
+                    </td>
+                    <td class="tablecell" colspan="2">
+                        <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/homePage.html" id="websiteTitle">The Global Clean-Up</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tablecell" id="yellowbackground">
+                        <div class="dropdown" id="bibliography">
+                            <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/Bibliography.html" class="regularTextLink" style="padding-left: 125px;">List of Sources</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="centered">
+            <h1>About Goal 12 Of The UN SDGs</h1>
+            <ul>
+                <li>A goal set by the United Nations to start sustainably developping and living</li>
+                <li>Set to ensure that our consumption and production can be sustained for generations to come</li>
+                <li>Has 12 sub-goals to help reach it</li>
+                <li>Aimed towards stopping pollution and climate change</li>
+            </ul>
+        </div>
+        <br>
+        <div id="panelArea">
+            <table id="panelTable">
+                <tr>
+                    <td class="panelSection">
+                        <div id="panelOne" class="panel">
+                            <img src="waterPollution.jpeg" class="image">
+                            <h3 class="panelTitle">Pollution</h3>
+                        </div>
+                        <div id="panelOneHovered" class="panel">
+                            <h2 class="panelInfo">Some Facts</h2>
+                            <ul>
+                                <li class="factPoints">Air pollution kills 7 million people worldwide annualy</li>
+                                <li class="factPoints">Over 1 million seabirds along with 100,000 sea mammals are killed by pollution annually</li>
+                                <li class="factPoints">Roughly 40% of lakes in American are too polluted for fishing, aquatic life or swimming</li>
+                            </ul>
+                            <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/PollutionArticle.html" class="regularTextLink mainArticleLink">To The Article <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                    </td>
+                    <td class="panelSection">
+                        <div id="panelTwo" class="panel">
+                            <img src="sustainableEnergy.jpeg" class="image">
+                            <h3 class="panelTitle">Sustainable Energy</h3>
+                        </div>
+                        <div id="panelTwoHovered" class="panel">
+                            <h2 class="panelInfo">Some Facts</h2>
+                            <ul>
+                                <li class="factPoints">Renewable energy creates 5 times more jobs than fossil fuels</li>
+                                <li class="factPoints">Renewable energy is very effecient compared to fossil fuels</li>
+                                <li class="factPoints">Developping countries still have untapped potential for renewable energy 4 times more powerful than that of their current production</li>
+                            </ul>
+                            <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/SustainableEnergyArticle.html" class="regularTextLink mainArticleLink">To The Article <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                    </td>
+                    <td class="panelSection">
+                        <div id="panelThree" class="panel">
+                            <img src="climateChange.jpeg" class="image">
+                            <h3 class="panelTitle">Climate Change and Waste</h3>
+                        </div>
+                        <div id="panelThreeHovered" class="panel">
+                            <h2 class="panelInfo">Some Facts</h2>
+                            <ul>
+                                <li class="factPoints">1240 tons of carbon dioxide is emited every second, which is really bad for our environment</li>
+                                <li class="factPoints">5 trillion single-use plastic bags are thrown away annually</li>
+                                <li class="factPoints">Each person generates 7.3 kilograms of e-waste with only 1.7 kilograms being recycled</li>
+                            </ul>
+                            <a href="file:///Users/Brian.Chang/Desktop/Design%20Coding%20Class/Year%209%20WebDev/Final%20Design%20Website%20Folder/ClimateChangeWasteArticle.html" class="regularTextLink mainArticleLink">To The Article <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="SDG12.png" class="slideImage">
+                <div class="text"><a href="https://www.globalgoals.org/goals/12-responsible-consumption-and-production/" class="articleLink">Responsible Consumption and Production</a></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="UNCTADimage.jpeg" class="slideImage">
+                <div class="text"><a href="https://unctad.org/news/time-empower-consumers-make-sustainable-choices" class="articleLink">The Quest for More Sustainable Choices</a></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="EasterChocolate.jpeg" class="slideImage">
+                <div class="text"><a href="https://www.forbes.com/sites/sap/2022/04/08/sustainable-easter-chocolates-biggest-day-hops-into-new-supply-chain-territory/?sh=53892cec1160" class="articleLink">Sustainable Chocolate for Easter</a></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <script type="text/javascript">
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) 
+            {
+                showSlides(slideIndex += n);
+            }
+            function showSlides(n) 
+            {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) 
+                {
+                    slideIndex = 1
+                }    
+                if (n < 1) 
+                {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) 
+                {
+                    slides[i].style.display = "none";  
+                }
+                slides[slideIndex-1].style.display = "block";  
+            }
+        </script>
+    </body>
+</html>
